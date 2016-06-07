@@ -1,7 +1,6 @@
 # IosLikeToggleButton 仿IOS的开关按钮
 
 #### 效果如下
-<br/>
 
 <img src="https://github.com/jiaowenzheng/IosLikeToggleButton/raw/master/screen.png" width="500" height="300"/>  
 
