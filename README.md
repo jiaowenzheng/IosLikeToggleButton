@@ -5,7 +5,6 @@
 <img src="https://github.com/jiaowenzheng/IosLikeToggleButton/raw/master/screen.png" width="500" height="300"/>  
 
 <br/>
-<br/>
 
 
 #### 用法
