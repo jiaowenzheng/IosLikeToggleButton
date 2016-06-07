@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IosLikeToggleButton">
+        <attr name="android:layout_width"/>
+        <attr name="on_color" format="color"/>
+        <attr name="off_color" format="color"/>
+        <attr name="toggle" format="boolean"/>
+    </declare-styleable>
+</resources>
