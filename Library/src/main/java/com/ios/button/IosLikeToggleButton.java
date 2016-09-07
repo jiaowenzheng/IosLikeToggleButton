@@ -258,14 +258,21 @@ public class IosLikeToggleButton extends Button implements GestureDetector.OnGes
                         ? COLOR_THUMB_LAYER_BOARD_DEGREE_ON
                         : COLOR_THUMB_LAYER_BOARD_DEGREE_OFF;
 
-        offset = 1 - offset;
-        int r = (int) (COLOR_BACK_LAYER_DIFF_RED * offset);
-        int g = (int) (COLOR_BACK_LAYER_DIFF_GREEN * offset);
-        int b = (int) (COLOR_BACK_LAYER_DIFF_BLUE * offset);
+        //fix bug closed status border color show error
+        if (offset >= 0.5){
+            mBackLayerPaintColor = COLOR_BACK_LAYER_ON;
+        }else{
+            mBackLayerPaintColor = COLOR_BACK_LAYER_OFF;
+        }
 
-        mBackLayerPaintColor =
-                Color.rgb(Color.red(COLOR_BACK_LAYER_ON) + r, Color.green(COLOR_BACK_LAYER_ON) + g,
-                        Color.blue(COLOR_BACK_LAYER_ON) + b);
+//        offset = 1 - offset;
+//        int r = (int) (COLOR_BACK_LAYER_DIFF_RED * offset);
+//        int g = (int) (COLOR_BACK_LAYER_DIFF_GREEN * offset);
+//        int b = (int) (COLOR_BACK_LAYER_DIFF_BLUE * offset);
+//
+//        mBackLayerPaintColor =
+//                Color.rgb(Color.red(COLOR_BACK_LAYER_ON) + r, Color.green(COLOR_BACK_LAYER_ON) + g,
+//                        Color.blue(COLOR_BACK_LAYER_ON) + b);
 
         return redraw;
     }
